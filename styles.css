@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #00025cd8;
+    color: white;
+}
+
+header {
+    grid-row: 1 / span 2;
+    border-right:  1px solid rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    height: 40px;
+    width: 150px;
+    background-color: azure;
+    margin-bottom: 20px;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#log-out {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(224, 95, 95);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.navtop {
+    border-bottom:  1px solid rgb(226, 226, 226);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navtop input {
+    height: 50px;
+    width: clamp(1000px, 100vw, 1200px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 0px 20px 0 20px;
+    margin: 0px 50px 0 50px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(50px,250px) 1fr;
+    grid-template-rows:  100px 1fr;
+
+}
+
+.Tasks {
+    margin: 50px;
+}
