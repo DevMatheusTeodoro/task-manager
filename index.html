@@ -14,35 +14,54 @@
 <body>
     <div class="container">
     <header>
+        <div class="header-top">
         <img src="./assets/done-logo.png" id="logo" alt="logo">
-        <div>
             <ul class="navbar">
-                <li><a>Dashboard</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Tasks</a></li>
-                <li><a>Calendar</a></li>
+                <li><a><img src="./assets/Header/tasks-all-svgrepo-com.svg">Tasks</a></li>
+                <li><a><img src="./assets/Header/Project.svg">Projects</a></li>
+                <li><a><img src="./assets/Header/calendar-days-svgrepo-com.svg">Calendar</a></li>
             </ul>
         </div>
         <a id="log-out"><img src="./assets/logout-svgrepo-com.svg">Log out</a>
     </header>
-    <main class="Tasks">
-        <div class="head">
-            <h1>Tasks</h1>
-            <div class="head-function">
-                <img src="./assets/undo-svgrepo-com.svg">
-                <img src="./assets/redo-svgrepo-com.svg">
-                <button>New task <img src="./assets/plus-large-svgrepo-com.svg"></button>
+    <main>
+        <!--Tasks Section-->
+        <section id="Tasks">
+            <div class="head">
+                <h1>Tasks</h1>
+                <div class="head-function">
+                    <img src="./assets/undo-svgrepo-com.svg">
+                    <img src="./assets/redo-svgrepo-com.svg">
+                    <button>New task <img src="./assets/plus-large-svgrepo-com.svg"></button>
+                </div>
             </div>
-        </div>
-        <div class="to-do">
+            <div class="content">
+                <div id="to-do" class="card">
+                    <div class="top-card">
+                        <img src="./assets/Tasks/checkbox-unchecked-svgrepo-com.svg">
+                        <h3>To-do</h3>
+                    </div>
+                </div>
 
-        </div>
-        <div class="in-progress">
+                <div id="in-progress" class="card">
+                    <div class="top-card">
+                        <img src="./assets/Tasks/time-svgrepo-com.svg">
+                        <h3>In Progress</h3>
+                    </div>
+                    
+                </div>
+                <div id="done" class="card">
+                    <div class="top-card">
+                        <img src="./assets/Tasks/checkbox-check-svgrepo-com.svg">
+                        <h3>Done</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project Section-->
+        <section id="Projects">
 
-        </div>
-        <div class="done">
-
-        </div>
+        </section>
     </main>
     </div>
 </body>
