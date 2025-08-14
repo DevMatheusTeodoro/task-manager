@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Done.</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <!-- Google Fonts Quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
     <header>
-        <img src="#" id="logo" alt="logo">
+        <img src="./assets/done-logo.png" id="logo" alt="logo">
         <div>
             <ul class="navbar">
                 <li><a>Dashboard</a></li>
@@ -19,17 +23,19 @@
                 <li><a>Calendar</a></li>
             </ul>
         </div>
-        <a id="log-out">Log out</a>
+        <a id="log-out"><img src="./assets/logout-svgrepo-com.svg">Log out</a>
     </header>
-    <div class="navtop">
-        <input type="text" placeholder="Search">
-    </div>
     <main class="Tasks">
-        <div class="top">
+        <div class="head">
             <h1>Tasks</h1>
-            <button>New task</button>
+            <div class="head-function">
+                <img src="./assets/undo-svgrepo-com.svg">
+                <img src="./assets/redo-svgrepo-com.svg">
+                <button>New task <img src="./assets/plus-large-svgrepo-com.svg"></button>
+            </div>
         </div>
         <div class="to-do">
+
         </div>
         <div class="in-progress">
 
