@@ -4,65 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done.</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <!-- Google Fonts Quicksand-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/base/styles.css">
+    <link rel="stylesheet" href="./css/components/header-section.css">
+    <link rel="stylesheet" href="./css/components/tasks-section.css">
+    <link rel="stylesheet" href="./css/components/footer-section.css">
+    <!-- JavaScript -->
+    <script src="./js/components/tasks-section.js" defer></script>
+    <script src="./js/components/projects-section.js" defer></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+    <!--Header section-->
     <header>
-        <div class="header-top">
-        <img src="./assets/done-logo.png" id="logo" alt="logo">
-            <ul class="navbar">
-                <li><a><img src="./assets/Header/tasks-all-svgrepo-com.svg">Tasks</a></li>
-                <li><a><img src="./assets/Header/Project.svg">Projects</a></li>
-                <li><a><img src="./assets/Header/calendar-days-svgrepo-com.svg">Calendar</a></li>
-            </ul>
-        </div>
-        <a id="log-out"><img src="./assets/logout-svgrepo-com.svg">Log out</a>
+      <div class="header-top">
+        <img src="./assets/Header/done-logo.png" class="header-logo" alt="Website Logo">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#tasks" class="nav-link">
+              <img src="./assets/Header/tasks.svg" alt="">Tasks
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <img src="./assets/Header/projects.svg" alt="">Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#calendar" class="nav-link">
+              <img src="./assets/Header/calendar.svg" alt="">Calendar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="header-logout">
+        <img src="./assets/Header/logout.svg" alt="">Log out
+      </a>
     </header>
-    <main>
-        <!--Tasks Section-->
-        <section id="Tasks">
-            <div class="head">
-                <h1>Tasks</h1>
-                <div class="head-function">
-                    <img src="./assets/undo-svgrepo-com.svg">
-                    <img src="./assets/redo-svgrepo-com.svg">
-                    <button>New task <img src="./assets/plus-large-svgrepo-com.svg"></button>
-                </div>
-            </div>
-            <div class="content">
-                <div id="to-do" class="card">
-                    <div class="top-card">
-                        <img src="./assets/Tasks/checkbox-unchecked-svgrepo-com.svg">
-                        <h3>To-do</h3>
-                    </div>
-                </div>
 
-                <div id="in-progress" class="card">
-                    <div class="top-card">
-                        <img src="./assets/Tasks/time-svgrepo-com.svg">
-                        <h3>In Progress</h3>
-                    </div>
-                    
-                </div>
-                <div id="done" class="card">
-                    <div class="top-card">
-                        <img src="./assets/Tasks/checkbox-check-svgrepo-com.svg">
-                        <h3>Done</h3>
-                    </div>
-                </div>
+    <main class="main">
+    <!-- Tasks Section -->
+      <section id="tasks" class="section section-tasks">
+        <div class="section-header">
+          <h1 class="section-title">Tasks</h1>
+          <div class="section-actions">
+            <img src="./assets/Tasks/undo.svg" alt="Undo">
+            <img src="./assets/Tasks/redo.svg" alt="Redo">
+            <button class="btn new-task">New task <img src="./assets/Tasks/plus.svg" alt="new-task logo">
+            </button>
+          </div>
+        </div>
+        <!--Task Board-->
+        <div class="task-board">
+          <div class="task-column task-column-todo">
+            <div class="task-column-header task-column-header-todo">
+              <img src="./assets/Tasks/unchecked.svg" alt="checkbox-unchecked">
+              <h3>To-do</h3>
             </div>
-        </section>
-        <!--Project Section-->
-        <section id="Projects">
+          </div>
 
-        </section>
+          <div class="task-column task-column-in-progress">
+            <div class="task-column-header task-column-header-in-progress">
+              <img src="./assets/Tasks/time.svg" alt="time-logo">
+              <h3>In Progress</h3>
+            </div>
+          </div>
+
+          <div class="task-column task-column-done">
+            <div class="task-column-header task-column-header-done">
+              <img src="./assets/Tasks/checked.svg" alt="checkbox-checked">
+              <h3>Done</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Projects Section -->
+      <section id="projects" class="section section-projects">
+
+      </section>
+    <!-- Calendar Section -->
+      <section id="calendar" class="section section-calendar">
+
+      </section>
     </main>
-    </div>
+
+    <footer>
+        <h1>2025 | by <a href="https://www.linkedin.com/in/dev-matheus-teodoro/" target="_blank">Matheus Teodoro</a></h1>
+    </footer>
+
+  </div>
 </body>
-</html>

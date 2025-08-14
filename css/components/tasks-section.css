@@ -1,0 +1,117 @@
+.section-tasks {
+    padding: 50px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-actions {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header img {
+    height: 18px;
+    margin-right: 10px;
+    width: 20px;
+    padding: 5px;
+}
+
+.section-actions > img:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(5214%) hue-rotate(296deg) brightness(118%) contrast(124%);
+    background-color: #dc46f021;
+    border-radius: 15px;
+}
+
+.new-task {
+    height: 35px;
+    width: 120px;
+    background-color: #4665f0;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 4px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.new-task img {
+    margin: 0;
+    height: 15px;
+}
+
+.new-task:hover {
+    background-color: #dc46f0;
+}
+
+/*Task board*/
+
+.task-board {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.task-column {
+    height: auto;
+    background-color: #4665f0;
+    width: 30%;
+    padding: 0px 15px 0 15px;
+    border-radius: 15px;
+}
+
+.task-column-todo {
+    background-color: #4665f03a;
+}
+
+.task-column-header-todo {
+    color: #2c4099;
+}
+
+.task-column-header-todo img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(59%) saturate(710%) hue-rotate(191deg) brightness(92%) contrast(107%);
+}
+
+.task-column-in-progress {
+    background-color: #f0ba4636;
+}
+
+.task-column-header-in-progress {
+    color: #886a28;
+}
+
+.task-column-header-in-progress img {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(7%) saturate(4386%) hue-rotate(3deg) brightness(90%) contrast(79%);
+}
+
+.task-column-done {
+    background-color: rgba(76, 240, 70, 0.192);
+}
+
+.task-column-header-done {
+    color: #288630;
+}
+
+.task-column-header-done img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(68%) saturate(7163%) hue-rotate(89deg) brightness(129%) contrast(116%);
+}
+
+.task-column-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-column img {
+    height: 20px;
+}
