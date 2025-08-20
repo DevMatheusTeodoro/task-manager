@@ -1,13 +1,13 @@
 header {
-    grid-row: 1 / span 2;
     border-right:  1px solid rgb(226, 226, 226);
     display: flex;
+    width: 250px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 50px 0 50px 0;
     font-weight: bolder;
-    position: sticky;
+    position: fixed;
+    height: 100dvh;
 }
 
 .header-logo {
@@ -27,6 +27,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 10%;
+    height: 100%;
 }
 
 .nav-link {
@@ -64,7 +65,9 @@ header {
 }
 
 .header-logout {
-    height: 40px;
+    position: absolute;
+    height: 35px;
+    top: 88dvh;
     width: 150px;
     background-color: #e05f5f5b;
     color: black;
@@ -85,5 +88,15 @@ header {
 .header-logout img {
     height: 20px;
     position: absolute;
-    left: 60px;
+    left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: none;
+    }
+
+    .section {
+        margin-left: 0;
+    }
 }

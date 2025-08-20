@@ -1,5 +1,7 @@
+
 .section-tasks {
     padding: 55px 50px 50px 50px;
+    margin-left: 250px;
 }
 
 .section-header {
@@ -129,6 +131,7 @@
     border-radius: 15px;
     color: rgb(255, 255, 255);
     box-shadow: 10px 10px 5px rgb(134, 153, 214);
+    display: none;
 }
 .new-task-empty {
     background: none;
@@ -142,4 +145,14 @@
 
 .new-task-empty:hover {
     color: #dc46f0;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-top {
+        display: none;
+    }
+
+    .section {
+        margin-left: 0;
+    }
 }
