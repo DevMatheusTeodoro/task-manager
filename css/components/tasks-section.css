@@ -195,15 +195,12 @@ background-color: #00ce22;
 .new-task-section {
     position: absolute;
     display: flex;
-    display: none; /* in construction */
     flex-direction: column;
-    align-items: center;
     top: 0;
-    margin: 40px;
+    margin: 17%;
     padding: 40px;
-    justify-content: center;
     min-height: 400px;
-    min-width: 800px;
+    min-width: 360px;
     background-color: #ffffff;
     border: solid 5px black;
     border-radius: 20px;
@@ -222,6 +219,10 @@ background-color: #00ce22;
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.date-task {
+    
 }
 
 @media screen and (max-width: 1024px) {
